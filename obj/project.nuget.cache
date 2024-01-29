@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "nych7j/hUbYhPD2xpOcHYR390tm6+dmE1I6gOnWS9pz4J8qJOWjm92nPjB9grOgFL0KwWV/TiAd+Adr8rwENiw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Anton\\source\\repos\\Anton-Aleksandrov-employees\\Anton-Aleksandrov-employees\\Anton-Aleksandrov-employees.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Anton\\.nuget\\packages\\csvhelper\\30.1.0\\csvhelper.30.1.0.nupkg.sha512",
+    "C:\\Users\\Anton\\.nuget\\packages\\system.linq.async\\4.0.0\\system.linq.async.4.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

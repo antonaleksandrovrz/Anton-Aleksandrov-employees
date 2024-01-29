@@ -1,0 +1,33 @@
+﻿<Window x:Class="Anton_Aleksandrov_employees.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Anton_Aleksandrov_employees"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="473" Width="827">
+    <Grid x:Name="___No_Name_">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="206*"/>
+            <RowDefinition Height="11*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="403*"/>
+            <ColumnDefinition Width="397*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="#FFC4D6E4" Offset="0.481"/>
+                <GradientStop Offset="1"/>
+                <GradientStop Color="White" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Button x:Name="Upload" Content="Upload CVS File" Margin="0,0,10,10" VerticalAlignment="Bottom" Height="24" Click="Upload_Click" Background="#FFDDDDDD" Grid.Column="1" Grid.RowSpan="2" HorizontalAlignment="Right" Width="161"/>
+        <Button x:Name="GenerateRandomCSV" Content="Generate Random CSV File" Margin="0,0,174,10" VerticalAlignment="Bottom" Height="24" Click="GenerateRandomCSV_Click" Background="#FFDDDDDD" Grid.Column="1" Grid.RowSpan="2" HorizontalAlignment="Right" Width="161"/>
+        <DataGrid x:Name="dGrid_LoadedData" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="10,10,10,0" HorizontalGridLinesBrush="#FFE0E0E0" CanUserAddRows="False" CanUserDeleteRows="False" SelectionUnit="Cell" CanUserResizeRows="False" Grid.ColumnSpan="2" Height="240" VerticalAlignment="Top"/>
+        <DataGrid x:Name="dg_ProcessedData" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="10,255,10,38" CanUserAddRows="False" CanUserDeleteRows="False" CanUserResizeRows="False" Grid.ColumnSpan="2"/>
+        <Label Content="DateFormat" Margin="0,0,364,11" RenderTransformOrigin="1.486,-0.615" HorizontalAlignment="Right" Width="72" Height="25" VerticalAlignment="Bottom" Grid.ColumnSpan="2"/>
+        <ComboBox x:Name="cBox_dateFormat" Margin="0,0,340,10" Grid.ColumnSpan="2" Height="24" VerticalAlignment="Bottom" Grid.RowSpan="2" HorizontalAlignment="Right" Width="120"/>
+
+    </Grid>
+</Window>
