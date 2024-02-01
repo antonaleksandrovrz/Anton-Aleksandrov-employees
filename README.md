@@ -18,8 +18,6 @@ Sample output:
 | EmpIDFirst | EmpIDSecond | ProjectID | DaysWorkedTogether |
 |------------|-------------|-----------|---------------------|
 | 226        | 310         | 2         | 7517                |
-| 310        | 349         | 2         | 1                   |
-| 226        | 349         | 2         | 1                   |
 
 
 Specific requirements
