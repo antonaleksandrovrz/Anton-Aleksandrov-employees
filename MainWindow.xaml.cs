@@ -24,7 +24,7 @@ namespace Anton_Aleksandrov_employees
         {
             try
             {
-                employeesData = EmployeeHelper.LoadEmployeesFromCsv();
+                employeesData = EmployeeCsvHelper.LoadEmployeesFromCsv();
 
                 if (employeesData != null && employeesData.Any())
                 {
@@ -51,14 +51,15 @@ namespace Anton_Aleksandrov_employees
                 return;
             }
 
-            EmployeeHelper.GenerateEmployeesCsvFile(cBox_dateFormat.SelectedValue.ToString(), 30);
+            EmployeeCsvHelper.GenerateEmployeesCsvFile(cBox_dateFormat.SelectedValue.ToString(), 30);
         }
 
         private void FindEmployeePairs(List<Employee> employeesData)
         {
             try
             {
-                List<EmployeePair> employeePairs = EmployeeHelper.GetEmployeePairs(employeesData, dateFormat);
+                EmployeeHelper employeeHelper = new EmployeeHelper(employeesData, dateFormat);
+                List<EmployeePair> employeePairs = employeeHelper.GetEmployeePairsWithMostWorkedTimeTogether();
                 BindDataGrid(dg_ProcessedData, employeePairs);
             }
             catch (Exception ex)
